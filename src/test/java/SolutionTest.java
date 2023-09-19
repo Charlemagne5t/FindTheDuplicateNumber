@@ -17,4 +17,20 @@ public class SolutionTest {
         int actual = new Solution().findDuplicate(nums);
         Assert.assertEquals(expected, actual);
     }
+    @Test
+    public void findDuplicateTest3() {
+        int[] nums = {1, 1};
+        int expected = 1;
+        int actual = new Solution().findDuplicate(nums);
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void findDuplicateTest4() {
+        int[] nums = {2,5,9,6,9,3,8,9,7,1};
+        int expected = 9;
+        int actual = new Solution().findDuplicate(nums);
+        Assert.assertEquals(expected, actual);
+    }
+
 }
